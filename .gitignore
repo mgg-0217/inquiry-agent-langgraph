@@ -1,0 +1,57 @@
+# ===== 密钥与配置 =====
+.env
+.env.local
+*.env
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ===== 数据库与运行时数据 =====
+backend/data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# ===== LangGraph checkpoints =====
+checkpoints.db
+
+# ===== Node / 前端 =====
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# ===== 制裁名单数据（体积大，用脚本下载）=====
+backend/data/sanctions/
+
+# ===== 隐私：含真实邮箱/姓名的截图，不进公开仓库 =====
+docs/shots/inbox-close.png
+docs/shots/real-mail-*.png
+docs/shots/module7-inbox-process.png
+
+# ===== 工具与日志 =====
+tools/
+*.log
+logs/
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
